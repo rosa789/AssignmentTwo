@@ -1,0 +1,445 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #EA7651;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 0 0;
+  height: 30px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.heading-box.right {
+    float: right;
+}
+
+.heading-box.heading-box-sm {
+    max-width: 285px;
+}
+
+.container-1 {
+  position: relative;
+  font-family: serif;
+}
+
+ .text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: White;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel {
+  height:500px;
+}
+
+.textone {
+
+  font-family: serif, math;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 900;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #003399
+}
+
+.texttwo {
+
+  font-family:Gotham,Helvetica;
+      font-size: 16px;
+      font-weight: 250;
+      text-align: left;
+      color:#003399 ;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #F70737;
+  font-family: Gotham, Helvetica
+}
+
+.button1 {
+  background-color: #F70737;
+  font-family: Gotham, Helvetica
+  }
+
+.h1-1{
+      font-family: Gotham, Helvetica;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 900;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #1A368E
+    }
+
+ .bodytext1 {
+
+  font-size:30px;
+  colour: white;
+
+ }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+footer {
+  padding: 3px;
+  background-color: #EA7651;
+  margin-top:15px;
+  color: white;
+  height:100px;
+  position: relative;
+
+}
+
+.footer-div{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.footertext {
+  font-size: 20px;
+  color: white
+
+}
+
+.content-wrap {
+
+  padding-bottom: 2.5rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  font: 150px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(0,0,255,0.5);
+  
+}
+
+h1:after {
+  content: "Classes";
+  position: absolute; left: 10px; top: 5px;
+  color: rgba(255,0,0,0.5);   
+
+}
+
+h2 {
+
+  font-family: 'Bungee Inline', cursive;
+  font-size: 50px;
+  color: #980F21;
+
+}
+
+.smalltext {
+
+  font-family: 'Noto Sans JP', sans-serif;;
+  font-size: 20px;
+}
+
+
+
+.text-center {
+      margin-left: 50px;
+      margin-right: auto;
+      width: 900px;
+
+}
+
+.destext {
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: lighter;
+  margin-right: auto;
+  margin-left: 50px;
+
+  
+}
+
+body {
+  padding: 50px;
+}
+
+
+.feature.bg-secondary {
+    padding-left: 60px;
+    padding-right: 60px;
+
+  }
+
+body {
+
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  background: white;
+}
+
+.box {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding:20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,5);
+  display: flex;
+
+}
+
+.box.imgBx {
+
+  width: 150px;
+  flex: 0 0 150px;
+
+}
+
+.box.imgBx img {
+
+  max-width: 100%
+}
+
+.box.content {
+
+  padding-left:20px;
+}
+
+.box.content h2 {
+
+  margin: 0 ;
+  padding-left: 0 ;
+  color: white;
+}
+
+.column {
+      float:left;
+      width : 50%;
+      padding: 5px;
+      margin-bottom: 100px;;
+      font-size: 20px
+      
+    }
+
+.row::after {
+      content: "";
+      clear: both;
+      display: table;
+      height: 20px;
+      
+
+    }
+
+.container-fluid1 {
+
+  max-width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #F2EEB5;
+
+}
+
+.container-fluid2 {
+
+  max-width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #CCF0F4;
+
+}
+
+.container-fluid3 {
+
+  max-width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFB5B5;
+
+}

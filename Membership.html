@@ -1,0 +1,156 @@
+<!Doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="mystylemem.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+ 
+</head>
+
+
+<body>
+
+
+<header>
+    <div class="container" style="padding-top: 10px; padding-bottom: 10px;">
+      <img src="F45.jpeg" class="logo"><p>ORCHARD</p>
+      
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Classtype.html">Class Types</a></li>
+          <li><a href="Membership.html">Membership</a></li>
+          <li><a href="FAQ.html">FAQ </a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+
+<h1>Membership</h1>
+<div class="destext">
+<p> F45 Training combines elements of high-intensity interval training (HIIT), circuit training and functional training. The variation of our workout programming keeps our members challenged, eager to grow and ready to have lots of fun together.</p>
+</div>
+
+<br>
+<br>
+
+<div class="container-fluid">
+  <h2>Class Passes</h2>
+  <p class="smalltext"> Class pass allows you to join any class with the desired number of classes you have purchased!</p>
+  <br>
+
+	<button onclick="ClassPass()">See Pricing</button>
+
+	<p id="ClassPass"></p>
+
+	<script>
+	function ClassPass() {
+	  document.getElementById("ClassPass").innerHTML = "One Week Class Pass : $85<br>5 Class Pass : $130 <br> 10 Class Pass : $240 <br> ";
+	}
+	</script> 
+</div>
+
+<div class="container-fluid">
+	  <h2>Drop In </h2>
+	  <p class="smalltext"> When you feel pumped up to get in an exercise workout after work or school, just join in any of our classes!</p>
+	  <br>
+	<button onclick="DropIn()">See Pricing</button>
+
+		<p id="Drop In"></p>
+
+			<script>
+				function DropIn() {
+				  document.getElementById("Drop In").innerHTML = " Drop In ( per class) : $40 ";
+				}
+			</script> 
+</div>
+
+
+<div class="container-fluid">
+	  <h2>Trail Classes </h2>
+	  <p class="smalltext"> If you're new or just want to be familiarised with the culture and regime of our workouts, we got you! Sign up for the trial class to kick start your nourney at F45!</p>
+	  <br>
+
+	<button onclick="Trial()">See Pricing</button>
+
+		<p id="Trial Class"></p>
+
+			<script>
+				function Trial() {
+				  document.getElementById("Trial Class").innerHTML = " 2 Weeks Trial Class : $49";
+				}
+			</script> 
+
+</div>
+
+<br>
+<br>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:50px height:20px; position:relative; margin: -20px -50px; width:100px; top:50%; left:50%";>Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <p class="signclass">Sign Up</p>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<br>
+<br>
+
+<footer>
+  <div class="footer-div">
+    <p class="footertext">©Copyright <script>document.write(new Date().getFullYear())</script>. Rosamond
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

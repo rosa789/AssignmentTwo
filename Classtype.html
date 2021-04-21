@@ -1,0 +1,190 @@
+<!Doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="mystyleclass.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  
+<body>
+
+
+<header>
+    <div class="container" style="padding-top: 10px; padding-bottom: 10px;">
+      <img src="F45.jpeg" class="logo"><p>ORCHARD</p>
+      
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Classtype.html">Class Types</a></li>
+          <li><a href="Membership.html">Membership</a></li>
+          <li><a href="FAQ.html">FAQ </a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="slideshow2.jpg" style="width:100%">
+    <div class="text">The Right Environmen For You!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="slideshow5.jpg" style="width:100%">
+    <div class="text">Always Challenge Yourself !</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="slideshow6.jpg" style="width:100%">
+    <div class="text">Encouraging Trainers Who Believe in You!</div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+<br>
+
+<h1>Classes</h1>
+<div class="destext">
+<p> F45 Training combines elements of high-intensity interval training (HIIT), circuit training and functional training. The variation of our workout programming keeps our members challenged, eager to grow and ready to have lots of fun together.</p>
+</div>
+
+<br>
+<br>
+
+<div class="container-fluid1">
+  <h2>CARDIO</h2>
+  <p class="smalltext"> (Mon, Wed, Fri)</p>
+  <br>
+
+  
+    <div class="row">
+      <div class="column">
+        <img src="athletica.jpeg" alt="athletica"
+        style="width:50%">
+      </div>
+    
+      <div class="column">
+        <p>Athletica is a declaration of war against body fat. This is no slow and steady walk in the park. It is an intense cardio workout designed to establish and build a strong aerobic foundation, pushing you into the fat-burning zone and sculpting a lea, toned body. ( Summer body here we come ! ) </p>
+      </div> 
+
+    </div>
+
+  </div>
+
+<div class="container-fluid2">
+  <h2>RESISTANCE</h2>
+  <p class="smalltext"> (Tues,Thurs,Sun)</p>
+  <br>
+
+  
+    <div class="row">
+      <div class="column">
+        <img src="allstar.jpeg" alt="alltar"
+        style="width:50%">
+      </div>
+    
+      <div class="column">
+        <p>Resistance training is an essential for building both muscle mass and bone density. Our strength training sessions use functional movement patterns to help our members to increase their muscle mass, and in turn, burn more calories every day, even at rest. Each resistance workout is designed to target power and stabilization for a solid base of functional strength, resulting in stronger, leaner, more defined muscles.</p>
+      </div> 
+
+    </div>
+
+  </div>
+<br>
+<br>  
+
+<div class="container-fluid3">
+  <h2>HYBRID</h2>
+  <p class="smalltext"> (Sat.Sun)</p>
+  <br>
+
+  
+    <div class="row">
+      <div class="column">
+        <img src="hollywood.jpeg" alt="hollywood"
+        style="width:50%">
+      </div>
+    
+      <div class="column">
+        <p>Get the best of both worlds by trying out one of our hybrid sessions! Combining our favorite cardio, resistance, agility and core movements, for an epic burn that increases your endurance, fires up your metabolism and improves your strength. In these sessions you’ll leave everything out on the floor to challenge both your body and your mind.</p>
+      </div> 
+
+    </div>
+
+  </div>
+
+
+<br>
+<br>
+
+<footer>
+  <div class="footer-div">
+    <p class="footertext">©Copyright <script>document.write(new Date().getFullYear())</script>. Rosamond
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

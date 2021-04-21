@@ -1,0 +1,182 @@
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+ body {
+	margin: 0;
+	background: white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+  header {
+  background: #EA7651;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 0 0;
+  height: 30px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 15px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  padding: 3px;
+  background-color: #EA7651;
+  margin-top:15px;
+  color: white;
+  height:100px;
+  position: relative;
+
+}
+
+.footer-div{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.footertext {
+  font-size: 20px;
+  color: white
+
+}
+
+.content-wrap {
+
+  padding-bottom: 2.5rem;
+}
+
+h3 {
+  display: inline;
+  position: relative;
+  font: 150px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(0,0,255,0.5);
+  
+}
+
+h3:after {
+  content: "Membership";
+  position: absolute; left: 10px; top: 5px;
+  color: rgba(255,0,0,0.5);   
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  font: 150px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(0,0,255,0.5);
+  
+}
+
+h1:after {
+  content: "FAQs";
+  position: absolute; left: 10px; top: 5px;
+  color: rgba(255,0,0,0.5);   
+
+}
+
+.destext {
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: lighter;
+  margin-right: auto;
+  margin-left: 30px;
+
+  
+}
+
+.center {
+
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#FAQ {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+
+}
+
+#FAQ td, #FAQ th {
+  border: 1px solid #C2BCB2;
+  padding: 30px;
+
+}
+
+#FAQ tr:nth-child(even){background-color: #F9C56F;}
+
+#FAQ tr:hover {background-color: #ddd;}
+
+#FAQ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #F7AC31;
+  color: black;
+  font-size: 15px
+}
